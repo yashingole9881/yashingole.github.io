@@ -17,20 +17,28 @@
 
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .footer { 
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: #9d9da0;
+       color: white;
+       text-align: center;
+    }  
 
-  <style> 
-body {
-    background: url("https://static.toiimg.com/thumb/msid-61766867,width-1070,height-580,imgsize-137730,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  }
 
-</style>
+
+
+    </style>           
+
 </head> 
 <body>
-<div class="container-fluid">
+<div class="container-fluid">  
+  <div class="text-center">   
+    <p style="font-size: 40px;">Sign in</p>
+</div> 
     <div class="row no-gutter">
       <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
       <div class="col-md-8 col-lg-6">
@@ -38,7 +46,7 @@ body {
           <div class="container">
             <div class="row">
               <div class="col-md-9 col-lg-8 mx-auto">
-                <h3 class="login-heading mb-4" style="color: aliceblue;">Welcome back!</h3>
+                <h3 class="login-heading mb-4" style="color:black;">Welcome back!</h3>
                 <form>
                   <div class="form-label-group">
                     <input type="username" id="inputEmail" class="form-control"  placeholder="UserName" required autofocus>
@@ -50,9 +58,8 @@ body {
                     <label for="inputPassword"style="color: lavender;">Password</label>
                   </div>
   
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" style="color:tomato;"customCheck1">Remember password</label>
+                  <div class="custom-checkbox mb-3">
+                    <label class="" style="color: tomato;"><input type="checkbox" value="customCheck1">Remember password</label>
                   </div>
                   <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Submit</button>
                   <div class="text-left">
@@ -67,8 +74,15 @@ body {
           </div>
         </div>
       </div>
-    </div>
-  </div>  
+    </div> 
+ 
+    <div class="footer">
+      <p> Designed by <a href="#">yashingole</a>@yashingole some right are reserved</p>
+    </div> 
+
+</div>  
+    
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/jquery.slim.js"></script>
-</body>
+</body> 
+</html>
